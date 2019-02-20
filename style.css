@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: #293b29;
+}
+
+.wrap {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  background-image: url(img/clock-bg.svg);
+  background-repeat: no-repeat;
+}
+
+.clock {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translate(242px, -4px);
+}
+
+.hand {
+  position: absolute;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand {
+  width: 72px;
+  height: 8px;
+  background-image: url(img/hour-hand.svg);
+  left: 7px;
+  top: 246px;
+  transform-origin: left;
+  transform: rotate(270deg);
+}
+
+.min-hand {
+  width: 8px;
+  height: 96px;
+  background-image: url(img/minute-hand.svg);
+  top: 154px;
+  left: 3px;
+  transform-origin: bottom;
+  transform: rotate(0deg);
+}
+
+.second-hand {
+  width: 14px;
+  height: 126px;
+  background-image: url(img/second-hand.svg);
+  left: 1px;
+  top: 50%;
+  transform-origin: top;
+  transform: rotate(180deg);
+}
